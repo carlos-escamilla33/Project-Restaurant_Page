@@ -1,7 +1,5 @@
-import navBar from "./navbar"
 
 const home = () => {
-    const homeDiv = document.createElement("div")
     const shopName = document.createElement("h1")
     const welcomeMsg = document.createElement("p")
     const pugRollDiv = document.createElement("div")
@@ -11,7 +9,6 @@ const home = () => {
     pugRollImg.src = "../media/pugroll.jpeg"
     pugRollImg.alt = "Clip Art of Pug Buns"
     welcomeDiv.setAttribute("class", "welcome-container")
-    homeDiv.setAttribute("id", "home-container")
     pugRollDiv.setAttribute("class", "pugRollDiv")
 
     pugRollDiv.appendChild(pugRollImg)
@@ -22,10 +19,7 @@ const home = () => {
     welcomeDiv.appendChild(shopName)
     welcomeDiv.append(pugRollDiv)
 
-    homeDiv.appendChild(navBar())
-    homeDiv.appendChild(welcomeDiv)
-
-    return homeDiv
+    return welcomeDiv
 }
 
 export default home

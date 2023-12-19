@@ -20,11 +20,12 @@ const pastries = [
         name: "Scones",
         img: "../media/scones.jpg"
     },
-
 ]
 
 const menu = () => {
-
+    const h1 = document.createElement("h1")
+    h1.textContent = "HELLLLOOOO WOOOOORRRLLLLDDD"
+    return h1
 }
 
 export default menu
