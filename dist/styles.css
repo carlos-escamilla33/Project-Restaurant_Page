@@ -27,11 +27,9 @@ body {
     width: 100vw;
 }
 
-.welcome-container {
+.default-styling {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
     height: 80vh;
@@ -39,6 +37,11 @@ body {
     background-color: #DED0B6;
     border-radius: 10px;
     font-size: 35px;
+}
+
+.welcome-container{
+    justify-content: center;
+    align-items: center;
 }
 
 .welcome-container > p {

@@ -9,6 +9,7 @@ const home = () => {
     pugRollImg.src = "../media/pugroll.jpeg"
     pugRollImg.alt = "Clip Art of Pug Buns"
     welcomeDiv.setAttribute("class", "welcome-container")
+    welcomeDiv.classList.add("default-styling")
     pugRollDiv.setAttribute("class", "pugRollDiv")
 
     pugRollDiv.appendChild(pugRollImg)

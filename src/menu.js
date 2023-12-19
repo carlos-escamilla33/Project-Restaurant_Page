@@ -23,9 +23,10 @@ const pastries = [
 ]
 
 const menu = () => {
-    const h1 = document.createElement("h1")
-    h1.textContent = "HELLLLOOOO WOOOOORRRLLLLDDD"
-    return h1
+    const menuDiv = document.createElement("div")
+    menuDiv.classList.add("default-styling")
+    
+    return menuDiv
 }
 
 export default menu
