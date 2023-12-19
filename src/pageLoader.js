@@ -1,5 +1,5 @@
 
-const pageLoader = (currentTab) => {
+const pageLoader = (event) => {
     
 }
 

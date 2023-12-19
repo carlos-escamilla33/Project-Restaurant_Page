@@ -1,6 +1,5 @@
 import home from "./home";
 const contentDiv = document.getElementById("content");
-console.log(contentDiv)
 contentDiv.appendChild(home())
 
 // here we add an event listener to buttons or divs
