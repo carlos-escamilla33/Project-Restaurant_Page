@@ -1,35 +1,28 @@
+import navBar from "./navbar"
 
 const home = () => {
     const homeDiv = document.createElement("div")
-    const navBar = document.createElement("div")
-    const title = document.createElement("h1")
+    const shopName = document.createElement("h1")
+    const welcomeMsg = document.createElement("p")
+    const pugRollDiv = document.createElement("div")
+    const pugRollImg = document.createElement("img")
     const welcomeDiv = document.createElement("div")
-    const homeTab = document.createElement("button")
-    const menuTab = document.createElement("button")
-    const aboutTab = document.createElement("button")
-    const tabArr = [homeTab, menuTab, aboutTab]
 
-    for (let i = 0; i < tabArr.length; i++) {
-        const currTab = tabArr[i]
-        currTab.setAttribute("class", "tab-btn")
-    }
-
+    pugRollImg.src = "../media/pugroll.jpeg"
+    pugRollImg.alt = "Clip Art of Pug Buns"
     welcomeDiv.setAttribute("class", "welcome-container")
     homeDiv.setAttribute("id", "home-container")
-    navBar.setAttribute("id", "navbar")
-    homeTab.textContent = "Home"
-    menuTab.textContent = "Menu"
-    aboutTab.textContent = "About"
+    pugRollDiv.setAttribute("class", "pugRollDiv")
 
-    navBar.appendChild(homeTab)
-    navBar.appendChild(menuTab)
-    navBar.appendChild(aboutTab)
+    pugRollDiv.appendChild(pugRollImg)
 
-    welcomeDiv.appendChild(title)
+    welcomeMsg.textContent = "Welcome to"
+    shopName.textContent = "Pug & Puff"
+    welcomeDiv.appendChild(welcomeMsg)
+    welcomeDiv.appendChild(shopName)
+    welcomeDiv.append(pugRollDiv)
 
-    title.textContent = "Pug & Puff"
-
-    homeDiv.appendChild(navBar)
+    homeDiv.appendChild(navBar())
     homeDiv.appendChild(welcomeDiv)
 
     return homeDiv
