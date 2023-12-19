@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=document.getElementById("content");console.log(e),e.appendChild((()=>{const e=document.createElement("div");return e.setAttribute("id","home-container"),e})())})();
+(()=>{"use strict";const e=document.getElementById("content");console.log(e),e.appendChild((()=>{const e=document.createElement("div");e.setAttribute("id","home-container");const t=document.createElement("div");t.setAttribute("id","menu"),e.appendChild(t);const n=document.createElement("h1");return n.textContent="Pug & Puff",e.appendChild(n),e})())})();

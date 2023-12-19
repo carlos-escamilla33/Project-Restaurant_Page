@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Noto+Sans+JP:wght@900&family=Open+Sans&family=Roboto:wght@900&display=swap');
 body {
     padding: 0;
     margin: 0;
 }
 
-
 #home-container{
     display: flex;
+    font-family: "Dancing Script", Roboto;
     background-color: #DED0B6;
     height: 100vh;
     width: 100vw;
