@@ -3,6 +3,7 @@ const home = () => {
     const homeDiv = document.createElement("div")
     const navBar = document.createElement("div")
     const title = document.createElement("h1")
+    const welcomeDiv = document.createElement("div")
     const homeTab = document.createElement("button")
     const menuTab = document.createElement("button")
     const aboutTab = document.createElement("button")
@@ -13,6 +14,7 @@ const home = () => {
         currTab.setAttribute("class", "tab-btn")
     }
 
+    welcomeDiv.setAttribute("class", "welcome-container")
     homeDiv.setAttribute("id", "home-container")
     navBar.setAttribute("id", "navbar")
     homeTab.textContent = "Home"
@@ -22,10 +24,13 @@ const home = () => {
     navBar.appendChild(homeTab)
     navBar.appendChild(menuTab)
     navBar.appendChild(aboutTab)
-    homeDiv.appendChild(navBar)
+
+    welcomeDiv.appendChild(title)
 
     title.textContent = "Pug & Puff"
-    homeDiv.appendChild(title)
+
+    homeDiv.appendChild(navBar)
+    homeDiv.appendChild(welcomeDiv)
 
     return homeDiv
 }
