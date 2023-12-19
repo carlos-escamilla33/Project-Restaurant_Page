@@ -2,23 +2,23 @@
 const pastries = [
     {
         name: "Macaroons",
-        img: ""
+        img: "../media/macaroons.jpg"
     },
     {
         name: "Croissant",
-        img: ""
+        img: "../media/croissant.jpg"
     },
     {
         name: "Cinnamon Roll",
-        img: ""
+        img: "../media/cinnamonroll.jpg"
     },
     {
         name: "Cheesecake",
-        img: ""
+        img: "../media/cheesecake.jpg"
     },
     {
         name: "Scones",
-        img: ""
+        img: "../media/scones.jpg"
     },
 
 ]
