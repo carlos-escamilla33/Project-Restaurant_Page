@@ -5,8 +5,8 @@ const home = () => {
 
 
 
-    console.log("HOME DIV CREATED")
     
+
     return homeDiv
 }
 
