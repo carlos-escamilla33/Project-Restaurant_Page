@@ -39,6 +39,24 @@ body {
     font-size: 35px;
 }
 
+.menu-styling {
+    margin: 2%;
+    background-color: #DED0B6;
+    border-radius: 10px;
+    height: 600px; /* Adjust this value based on your design */
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.menu-styling img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Adjust as needed */
+}
+
 .welcome-container{
     justify-content: center;
     align-items: center;
