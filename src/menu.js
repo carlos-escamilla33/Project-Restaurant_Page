@@ -31,6 +31,7 @@ const menu = () => {
     const menuTitle = document.createElement("h1")
     menuDiv.classList.add("default-styling")
     menuDiv.classList.add("menu-styling")
+    menuDiv.classList.add("transitioned")
 
     menuTitle.textContent = "Menu"
     menuDiv.appendChild(menuTitle)
