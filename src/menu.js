@@ -2,43 +2,57 @@
 const pastries = [
     {
         name: "Macaroons",
-        imgURL: "../media/macaroons.jpg"
+        description: "Colorful almond cookies, crisp outside, chewy inside, various fillings"
     },
     {
-        name: "Croissant",
-        imgURL: "../media/croissant.jpg"
+        name: "Croissants",
+        description: "Flaky, buttery French pastry, crescent-shaped, perfect for breakfast"
     },
     {
-        name: "Cinnamon Roll",
-        imgURL: "../media/cinnamonroll.jpg"
+        name: "Cinnamon Rolls",
+        description: "Sweet rolled pastry, cinnamon-sugar filling, topped with glaze or frosting"
     },
     {
         name: "Cheesecake",
-        imgURL: "../media/cheesecake.jpg"
+        description: "Creamy dessert with sweetened cream cheese filling, often baked"
     },
     {
         name: "Scones",
-        imgURL: "../media/scones.jpg"
+        description: "British pastry, tender and sweet, often with fruit or nuts"
     },
     {
-        name: "Cupcake",
-        imgURL: "../media/cupcake.jpg"
+        name: "Cupcakes",
+        description: "Individual cake in a cup, various flavors, topped with frosting"
     },
 ]
 
 const menu = () => {
     const menuDiv = document.createElement("div")
-    // menuDiv.classList.add("default-styling")
+    const menuTitle = document.createElement("h1")
+    menuDiv.classList.add("default-styling")
     menuDiv.classList.add("menu-styling")
 
+    menuTitle.textContent = "Menu"
+    menuDiv.appendChild(menuTitle)
+
     for (let i = 0; i < pastries.length; i++) {
-        const image = document.createElement("img")
-        const pastry = pastries[i]
+        const card = document.createElement("div")
+        const h3 = document.createElement("h3")
+        const p = document.createElement("p")
 
-        image.src = pastry.imgURL
-        image.alt = pastry.name
+        const title = pastries[i].name
+        const description = pastries[i].description
 
-        menuDiv.appendChild(image)
+        h3.textContent = title
+        p.textContent = description
+
+        card.appendChild(h3)
+        card.appendChild(p)
+
+
+        card.classList.add("card")
+
+        menuDiv.appendChild(card)
     }
     
     return menuDiv
